@@ -1,0 +1,409 @@
+/* General Settings */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: 'Roboto', "Helvetica", sans-serif;
+}
+
+body{
+	background-color: #F1F1F1;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.container-fluid{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.clearfix{
+	clear: both;
+}
+
+ul{list-style: none;}
+a{text-decoration: none;}
+
+h1{
+	font-size: 38px;
+}
+
+.teklif{
+	position: fixed;
+	top: 140px;
+	left: 0;
+	z-index: 999999999;
+}
+
+.teklif img{
+	width: 40px;
+	height: 140px;
+}
+
+/* Navbar */
+.navbar{
+	background-color: white;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	text-transform: uppercase;
+	padding: 20px 0;
+	position: fixed;
+	z-index: 99999;
+}
+
+.logo{
+	float: left;
+}
+
+.nav-menu{
+	float: right;
+}
+
+.nav-menu li{
+	display: inline-block;
+	line-height: 60px;
+	padding-right: 20px;
+}
+
+.nav-menu li a{
+	color: #393939;
+	display: inline-block;
+	font-size: 20px;
+	transition: color .3s;
+}
+
+.nav-menu li a:hover{
+	color: #ff7315;
+}
+
+/* Slider */
+
+#slider{
+	padding-top: 105px;
+}
+
+.bx-wrapper{
+	border-width: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.bx-wrapper img{
+	width: 100%;
+}
+
+/* Referans */
+.referans{
+	clear: both;
+	background-image: url("img/ref-bg.png");
+	height: 127px;
+	margin: 0 auto;
+}
+
+.ref-col{
+	float: left;
+	width: 13.33%;
+	margin-right: 40px;
+}
+
+/* Kurumsal Web Tasarım */
+.web-tasarim{
+	text-align: center;
+	margin: 50px 0;
+}
+
+.baslik{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.baslik h1::after,
+.kurumsal-baslik h2::after,
+.baslik h3::after{
+    content: '';
+    width: 45px;
+    height: 2px;
+    background: #d23b1d;
+    display: block;
+    margin: 10px auto;
+}
+
+.baslik h1{
+	color: #D23B1D;
+}
+
+.baslik p{
+	font-size: 15px;
+	color: #6A6A6A;
+	margin: 20px 0 40px 0;
+}
+
+.tasarim-col{
+	width: 33.33%;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.tasarim-col p{
+	color: #6A6A6A;
+	font-size: 26px;
+	margin: 20px 0;
+}
+
+.tasarim-col img{
+	filter: grayscale(100%);
+	transition: filter .5s;
+	cursor: pointer;
+}
+
+.tasarim-col img:hover{
+	filter: grayscale(0);
+}
+
+/* Kurumsal web tasarım */
+.kurumsal-baslik{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.kurumsal-columns{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.kurumsal-baslik h2{
+	color: #D23B1D;
+}
+
+.kurumsal-col{
+	width: 33.33%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.kurumsal-baslik p{
+	font-size: 16px;
+	text-align: center;
+	color: #6A6A6A;
+	margin: 20px 0;
+}
+
+/* Hizmet ve çözümlerimiz */
+.hizmet-cozum,
+.hizmet-cozumlerimiz{
+	background-color: #d23b1d;
+	height: 80px;
+	text-align: center;
+	transition: background-color .5s;
+}
+
+.hizmet-cozum p,
+.hizmet-cozumlerimiz p{
+	color: white;
+	font-size: 28px;
+	padding: 20px;
+}
+
+.hizmet-cozum:hover,
+.hizmet-cozumlerimiz:hover{
+	background-color: #6a6a6a;
+}
+
+/* Web tasarım aşkı */
+.baslik h3{
+	color: #D23B1D;
+	font-size: 30px;
+}
+
+.web-tasarim-col{
+	width: 360px;
+	height: 50px;
+	color: white;
+	text-align: left;
+	background-color: #565656;
+	margin-bottom: 10px;
+	transition: background-color .3s;
+}
+
+.active{
+	background-color: #d23b1d;
+}
+
+.web-columns{
+	float: left;
+}
+
+.web-tasarim-col p{
+	padding: 15px;
+	font-size: 15px;
+}
+
+.web-tasarim-col:hover{
+	background-color: #d23b1d;
+}
+
+
+.d-none{
+	display: none;
+}
+
+.web-tasarim-icerik img{
+	width: 107.5%;
+	height: 470px;
+}
+
+.web-tasarim-icerik{
+	float: left;
+	margin-left: 15px;
+}
+
+.margin{
+	margin: 30px 0 0 0;
+}
+
+
+/* Çözümlerimiz */
+.cozumlerimiz h4{
+	font-size: 21px;
+	color: #6A6A6A;
+	font-weight: normal;
+	padding: 15px 0;
+}
+
+.cozumlerimiz{
+	background-color: white !important!;
+}
+
+.cozumlerimiz p{
+	font-size: 16px;
+	line-height: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #6A6A6A;
+}
+
+.cozum-bg{
+	background-color: white !important;
+}
+
+.cozum-yazi{
+	padding-bottom: 30px;
+}
+
+/* Blog */
+.blog{
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.blog-cols{
+	width: 48%;
+	float: left;
+}
+
+.blog-col{
+	background-color: white;
+	border-radius: 10px;
+	width: 100%;
+	float: left;
+	height: 550px;
+}
+
+.blog-col h4{
+	font-size: 21px;
+	float: left;
+	padding: 10px 0 10px 30px;
+}
+
+.blog-col h4 a{
+	color: #d23b1d;
+}
+
+.blog-col p{
+	margin: 10px 0;
+	font-size: 14px;
+    line-height: 25px;
+	text-align: justify;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.blog-col img{
+	width: 525px;
+	height: 225px;
+}
+
+.margin-blog{
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+/* Footer */
+.footer{
+	width: 100%;
+	background-color: #252d37;
+	text-align: center;
+	overflow: hidden;
+}
+
+.footer-col{
+	width: 30%;
+	display: inline-block;
+	margin: 0 auto;
+	margin: 40px 20px;
+}
+.footer-baslik h1{
+	color: white;
+	font-size: 28px;
+	font-weight: normal;
+	padding-top: 30px;
+}
+
+.icon{
+	background: #f85c23;
+    border-radius: 50%;
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    font-size: 31px;
+    border: 10px solid #84422d;
+    margin-bottom: 10px;
+}
+
+.footer-col p{
+	margin-top: 10px;
+	color: white;
+	font-size: 15px;
+}
+
+.footer-social a{
+	margin-right: 10px;
+}
+
+.footer-social i{
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 16px;
+    background: #4f555d;
+    transition: all .5s ease;
+}
+
+.footer-social i:hover{
+	background: #d23b1d;
+}
+
+.footer-info p{
+	color: white;
+	margin: 15px 0;
+}
+
+.footer-info p:nth-child(2){
+	font-size: 14px;
+}
